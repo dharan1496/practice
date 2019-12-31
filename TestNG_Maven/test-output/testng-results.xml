@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="testSuite" duration-ms="43096" started-at="2019-12-31T21:29:07 IST" finished-at="2019-12-31T21:29:50 IST">
+    <groups>
+    </groups>
+    <test name="example" duration-ms="17596" started-at="2019-12-31T21:29:07 IST" finished-at="2019-12-31T21:29:24 IST">
+      <class name="testFile.google">
+        <test-method status="PASS" signature="main1(java.lang.String)[pri:0, instance:testFile.google@7791a895]" name="main1" duration-ms="17506" started-at="2019-12-31T21:29:07 IST" finished-at="2019-12-31T21:29:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main1 -->
+      </class> <!-- testFile.google -->
+    </test> <!-- example -->
+    <test name="example1" duration-ms="43096" started-at="2019-12-31T21:29:07 IST" finished-at="2019-12-31T21:29:50 IST">
+      <class name="testFile.google">
+        <test-method status="PASS" signature="main1(java.lang.String)[pri:0, instance:testFile.google@79be0360]" name="main1" duration-ms="43025" started-at="2019-12-31T21:29:07 IST" finished-at="2019-12-31T21:29:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main1 -->
+      </class> <!-- testFile.google -->
+    </test> <!-- example1 -->
+  </suite> <!-- testSuite -->
+</testng-results>

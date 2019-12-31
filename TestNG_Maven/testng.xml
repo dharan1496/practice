@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="testSuite" parallel="tests"> <!-- methods or classes or tests -->
+
+	<test name="example">
+		<parameter name="url" value="http://www.gmail.com"></parameter>
+		<classes>
+			<class name="testFile.google" />
+		</classes>
+	</test>
+	<test name="example1">
+		<parameter name="url" value="http://www.yahoo.com"></parameter>
+		<classes>
+			<class name="testFile.google" />
+		</classes>
+	</test>
+
+</suite>
