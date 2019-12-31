@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class google {
 	public WebDriver driver;
-	public static String url1 = null;
+	public static String pageurl = null;
 //	@Test(threadPoolSize = 2, invocationCount = 2)
 //	public void main() throws Throwable {
 //		System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\chromedriver.exe");
@@ -26,8 +26,8 @@ public class google {
 	public void main1(String url) throws Throwable {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\chromedriver.exe");
 		driver = new ChromeDriver();
-		url1 = url;
-		driver.get(url1);
+		pageurl = url;
+		driver.get(pageurl);
 		System.out.println(driver.getTitle() + " " + Thread.currentThread().getId());
 		driver.quit();
 	}
