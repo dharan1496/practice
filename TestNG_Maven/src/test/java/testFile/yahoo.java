@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 //load yahoo url in google
 //CICD pipeline
+//continuous 
 public class yahoo {
 	public WebDriver driver;
 	@BeforeTest
