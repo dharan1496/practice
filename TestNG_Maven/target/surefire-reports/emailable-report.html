@@ -8,13 +8,36 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11,741</td><td></td><td></td></tr>
+<tr><th colspan="7">testSuite</th></tr>
+<tr><td><a href="#t0">example</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36,531</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">example1</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">54,899</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">91,430</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">runnerFile.runnerClass</td><td><a href="#m0">feature</a></td><td rowspan="1">1572778444381</td><td rowspan="1">11055</td></tr><tr class="passedeven"><td><a href="#m1">first</a></td><td rowspan="1">1572778455450</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m2">main</a></td><td rowspan="1">1572778455453</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">testSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">example &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testFile.google</td><td><a href="#m0">main1</a></td><td rowspan="1">1577851448857</td><td rowspan="1">36462</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">example1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testFile.google</td><td><a href="#m1">main1</a></td><td rowspan="1">1577851448857</td><td rowspan="1">54805</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">runnerFile.runnerClass#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Title of your feature</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">runnerFile.runnerClass#first</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">runnerFile.runnerClass#main</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>example</h2><h3 id="m0">testFile.google#main1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>http://www.gmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>example1</h2><h3 id="m1">testFile.google#main1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>http://www.yahoo.com</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.88)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-7KMSP50&apos;, ip: &apos;192.168.43.193&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a9f0658ee60a7435e04415988f23602d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at testFile.google.main1(google.java:33)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
