@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 //load yahoo url in google 
+//github with jenkins
 public class yahoo {
 	public WebDriver driver;
 	@BeforeTest
