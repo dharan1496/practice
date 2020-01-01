@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+//load gmail in google
 public class google {
 	public WebDriver driver;
 	public static String pageurl = null;
