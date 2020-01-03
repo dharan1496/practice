@@ -3,7 +3,7 @@
 <suite thread-count="2" name="testSuite" parallel="tests"> <!-- methods or classes or tests -->
 
 	<test name="example">
-		<parameter name="url" value="http://321dfba4.ngrok.io/sampleUI/"></parameter>
+		<parameter name="url" value="http://321dfba4.ngrok.io/UI/sampleUI/"></parameter>
 		<classes>
 			<class name="testFile.google" />
 		</classes>
