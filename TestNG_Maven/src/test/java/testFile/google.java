@@ -1,5 +1,6 @@
 package testFile;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Parameters;
@@ -17,6 +18,11 @@ public class google {
 		pageurl = url;
 		driver.get(pageurl);
 		System.out.println(driver.getTitle() + " " + Thread.currentThread().getId());
+		driver.findElement(By.id("input")).sendKeys("dharani");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@type='button']")).click();
+		Thread.sleep(2000);
+		driver.switchTo().alert().accept();
 		driver.quit();
 	}
 
