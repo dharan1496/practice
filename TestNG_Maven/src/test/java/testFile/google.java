@@ -23,6 +23,7 @@ public class google {
 		driver.findElement(By.xpath("//input[@type='button']")).click();
 		Thread.sleep(2000);
 		driver.switchTo().alert().accept();
+		System.out.println("success");
 		driver.quit();
 	}
 
