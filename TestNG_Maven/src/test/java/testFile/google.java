@@ -17,6 +17,7 @@ public class google {
 		driver = new ChromeDriver();
 		pageurl = url;
 		driver.get(pageurl);
+		driver.get(pageurl);
 		System.out.println(driver.getTitle() + " " + Thread.currentThread().getId());
 		driver.findElement(By.id("input")).sendKeys("dharani");
 		Thread.sleep(2000);
