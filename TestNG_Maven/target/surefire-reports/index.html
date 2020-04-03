@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-testSuite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content passed suite-testSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-testSuite" title="testFile.google" hash-for-method="main1(http://www.gmail.com)">main1(http://www.gmail.com)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-testSuite" title="testFile.google" hash-for-method="main1(http://www.yahoo.com)">main1(http://www.yahoo.com)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-testSuite" title="testFile.google" hash-for-method="main1(https://dharan1496.github.io/UI/sampleUI/)">main1(https://dharan1496.github.io/UI/sampleUI/)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-testSuite -->
@@ -130,18 +125,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="main1(http://www.gmail.com)">
-                  </a> <!-- main1(http://www.gmail.com) -->
+                  <a name="main1(https://dharan1496.github.io/UI/sampleUI/)">
+                  </a> <!-- main1(https://dharan1496.github.io/UI/sampleUI/) -->
                   <span class="method-name">main1</span>
-                  <span class="parameters">(http://www.gmail.com)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="main1(http://www.yahoo.com)">
-                  </a> <!-- main1(http://www.yahoo.com) -->
-                  <span class="method-name">main1</span>
-                  <span class="parameters">(http://www.yahoo.com)</span>
+                  <span class="parameters">(https://dharan1496.github.io/UI/sampleUI/)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -157,17 +144,11 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;testSuite&quot; parallel=&quot;tests&quot;&gt;
   &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;example&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;http://www.gmail.com&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://dharan1496.github.io/UI/sampleUI/&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testFile.google&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- example --&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;example1&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;http://www.yahoo.com&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testFile.google&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- example1 --&gt;
 &lt;/suite&gt; &lt;!-- testSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,9 +161,6 @@
             <ul>
               <li>
                 <span class="test-name">example (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">example1 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,20 +186,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'main1')
 data.setCell(0, 2, 'testFile.google')
-data.setCell(0, 3, 43940);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'main1')
-data.setCell(1, 2, 'testFile.google')
-data.setCell(1, 3, 41541);
+data.setCell(0, 3, 30610);
 window.suiteTableData['testSuite']= { tableData: data, tableDiv: 'times-div-testSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-testSuite">
               </div> <!-- times-div-testSuite -->
             </div> <!-- times-div -->
@@ -249,11 +223,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testFile.google</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">main1(http://www.gmail.com)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">main1(http://www.yahoo.com)</span>
+                <span class="method-name">main1(https://dharan1496.github.io/UI/sampleUI/)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

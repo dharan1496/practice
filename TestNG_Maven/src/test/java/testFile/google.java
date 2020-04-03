@@ -19,6 +19,7 @@ public class google {
 		driver.get(pageurl);
 		Thread.sleep(4000);
 		//driver.navigate().refresh();
+		System.out.println(driver.getCurrentUrl());
 		System.out.println(driver.getTitle() + " " + Thread.currentThread().getId());
 		driver.findElement(By.id("input")).sendKeys("dharani");
 		Thread.sleep(2000);
